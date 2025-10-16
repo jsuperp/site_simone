@@ -1,12 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minha Landing Page</title>
+  <!-- Bootstrap 5 CDN -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container-fluid"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">MinhaMarca</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Bem-vindo à Minha Landing Page</h1>
+      <p class="lead">Oferecemos soluções práticas para o seu negócio crescer.</p>
+      <a href="#contato" class="btn btn-light btn-lg">Fale Conosco</a>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Sobre Nós</h2>
+      <p class="text-center">Somos uma equipe especializada em transformar ideias em resultados. Com experiência em diversas áreas, ajudamos você a alcançar seus objetivos.</p>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Nossos Serviços</h2>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <div class="card p-3 mb-4">
+            <h5>Consultoria</h5>
+            <p>Orientação especializada para otimizar processos e estratégias.</p>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="card p-3 mb-4">
+            <h5>Desenvolvimento Web</h5>
+            <p>Criação de sites modernos, rápidos e responsivos.</p>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="card p-3 mb-4">
+            <h5>Marketing Digital</h5>
+            <p>Campanhas eficazes para atrair e reter clientes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+<section id="contato" class="py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">Entre em Contato</h2>
+    <p class="mb-3">Clique no botão abaixo para iniciar uma conversa diretamente no WhatsApp com a nossa equipe.</p>
+    <a href="https://wa.me/5513997217402" target="_blank" class="btn btn-success btn-lg">
+      <i class="bi bi-whatsapp"></i> Fale conosco pelo WhatsApp
+    </a>
+  </div>
+</section>
+
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 MinhaMarca. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
