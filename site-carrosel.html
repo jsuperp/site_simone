@@ -2,13 +2,17 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Carrossel com Transição CSS Suave</title>
+  <title>ONDA Bertioga</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
+    /* cor bege*/
+    .bege {
+      background-color: bisque;
+    }
     /* Transição suave entre slides */
     .carousel-item {
       opacity: 0;
@@ -24,7 +28,7 @@
     /* Imagens ajustadas à largura, com altura automática */
     .carousel-item img {
       width: 100%;
-      height: auto;
+      height: 500px;
       display: block;
     }
 
@@ -37,21 +41,37 @@
     }
   </style>
 </head>
-<body>
+<body class="bege">
 
-<div class="container mt-5">
-  <h2 class="text-center mb-4">Carrossel CSS - Imagens sem corte</h2>
+<div class="container mt-5 bege">
+  <h1 class="text-center mb-4"><strong>ONDA Bertioga</strong>: O imovel dos seus sonhos</h1>
 
+   <!--Carrosel área de lazer-->
   <div id="carouselFotos" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="Planta_final_4.jpeg" alt="Imagem 1">
+        <img src="Piscina_coberta_climatizada.jpeg" alt="Piscina_coberta_climatizada">
+        <p class="h1 text-center">Piscina coberta climatizada</p>
       </div>
       <div class="carousel-item">
-        <img src="Piscina.jpeg" alt="Imagem 2">
+        <img src="Fitness.jpeg" alt="Fitness">
+        <p class="h1 text-center">Fitness</p>
       </div>
       <div class="carousel-item">
-        <img src="pateo_de_entrada.jpeg" alt="Imagem 3">
+        <img src="Churrasqueira.jpeg" alt="Churrasqueira">
+        <p class="h1 text-center">Churrasqueira</p>
+      </div>
+      <div class="carousel-item">
+        <img src="Salão_de_festas.jpeg" alt="Salão_de_festas">
+        <p class="h1 text-center">Salão de festas</p>
+      </div>
+      <div class="carousel-item">
+        <img src="Playground.jpeg" alt="Playground">
+        <p class="h1 text-center">Playground</p>
+      </div>
+      <div class="carousel-item">
+        <img src="Brinquedoteca.jpeg" alt="Brinquedoteca">
+        <p class="h1 text-center">Brinquedoteca</p>
       </div>
     </div>
 
@@ -65,6 +85,38 @@
       <span class="visually-hidden">Próximo</span>
     </button>
   </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <!--Carrosel plantas-->
+  <div id="carouselFotos2" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Planta_2.jpeg" alt="Planta final 2">
+        <p class="h1 text-center">Planta final 2</p>
+      </div>
+      <div class="carousel-item">
+        <img src="Planta_final_4.jpeg" alt="Planta final 4">
+        <p class="h1 text-center">Planta final 4</p>
+      </div>
+      <div class="carousel-item">
+        <img src="planta_6.jpeg" alt="Planta final 6">
+        <p class="h1 text-center">Planta final 6</p>
+      </div>
+      <div class="carousel-item">
+        <img src="planta_8.jpeg" alt="Planta final 8">
+        <p class="h1 text-center">Planta final 8</p>
+      </div>
+    </div>
+
+    <!-- Botões de navegação -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselFotos2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselFotos2" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
 </div>
 
 
@@ -80,16 +132,8 @@
   </div>
 </section>
 
-<!-- Sobre -->
-  <section id="sobre" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Sobre Nós</h2>
-      <p class="text-center">Somos uma equipe especializada em transformar ideias em resultados. Com experiência em diversas áreas, ajudamos você a alcançar seus objetivos.</p>
-    </div>
-  </section>
-
   <!-- Rodapé -->
-  <footer class="bg-dark text-white text-center py-3">
+  <footer class="bege text-dark text-center py-3">
     <p class="mb-0">&copy; 2025 MinhaMarca. Todos os direitos reservados.</p>
   </footer>
 <!-- Bootstrap JS -->
